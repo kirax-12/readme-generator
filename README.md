@@ -1,5 +1,7 @@
 # Generator README
 
+**Demo live:** [readme-generator di GitHub Pages](https://kirax-12.github.io/readme-generator/)
+
 Web app statis buat membuat README.md GitHub yang rapi dalam semenit: isi form (nama proyek, deskripsi, fitur, teknologi, cara menjalankan, lisensi, link demo), lalu salin markdown-nya atau unduh langsung sebagai file README.md. Dilengkapi pratinjau hasil render yang diperbarui langsung setiap ketikan.
 
 Dibuat oleh **Remike Dev**.
