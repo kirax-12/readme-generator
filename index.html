@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generator README — Bikin README.md GitHub dalam Semenit</title>
+<meta name="description" content="Isi form sederhana, keluar README.md yang rapi buat repo GitHub kamu: judul, deskripsi, fitur, teknologi, cara install, lisensi. Ada pratinjau langsung, tombol salin, dan unduh file.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="tape" aria-hidden="true">
+  <div class="tape-track">
+    <span>Generator README · Repo Tanpa README Itu Sedih · Isi Form · Salin · Tempel · </span>
+    <span>Generator README · Repo Tanpa README Itu Sedih · Isi Form · Salin · Tempel · </span>
+  </div>
+</div>
+
+<header class="app-header">
+  <h1>Generator <span class="hl">README</span></h1>
+  <p class="app-sub">repo kamu masih polos tanpa penjelasan? beresin di sini ↓</p>
+</header>
+
+<main>
+  <section class="panel" aria-label="Form README">
+    <h2>Isi datanya</h2>
+    <div class="field">
+      <label for="f-name">Nama proyek</label>
+      <input id="f-name" type="text" value="Proyek Kerenku" maxlength="60">
+    </div>
+    <div class="field">
+      <label for="f-desc">Deskripsi (1–2 kalimat: ini proyek apa, buat siapa)</label>
+      <textarea id="f-desc" rows="2">Aplikasi web buat mencatat sesuatu dengan cepat, langsung dari browser tanpa daftar.</textarea>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label for="f-demo">Link demo live (opsional)</label>
+        <input id="f-demo" type="url" placeholder="https://username.github.io/proyek/">
+      </div>
+      <div class="field">
+        <label for="f-author">Nama penulis</label>
+        <input id="f-author" type="text" value="Remike Dev" maxlength="40">
+      </div>
+    </div>
+    <div class="field">
+      <label for="f-features">Fitur (satu fitur per baris)</label>
+      <textarea id="f-features" rows="4">Tambah data dalam 2 klik
+Tersimpan otomatis di browser
+Bisa dipakai di HP dan desktop</textarea>
+    </div>
+    <div class="field">
+      <label for="f-tech">Teknologi (pisahkan dengan koma)</label>
+      <input id="f-tech" type="text" value="HTML, CSS, JavaScript">
+    </div>
+    <div class="field">
+      <label for="f-install">Cara menjalankan (satu langkah per baris, boleh kosong)</label>
+      <textarea id="f-install" rows="3" placeholder="git clone https://github.com/username/proyek.git&#10;cd proyek&#10;npm run dev"></textarea>
+    </div>
+    <div class="field">
+      <label for="f-license">Lisensi</label>
+      <select id="f-license">
+        <option>MIT</option>
+        <option>Apache-2.0</option>
+        <option>GPL-3.0</option>
+        <option>Belum ditentukan</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="panel" aria-label="Hasil README">
+    <h2>Hasilnya</h2>
+    <div class="tabs" role="tablist">
+      <button class="tab active" id="tab-md" type="button">Markdown</button>
+      <button class="tab" id="tab-preview" type="button">Pratinjau</button>
+    </div>
+    <pre class="md-out" id="md-out"></pre>
+    <div class="md-preview" id="md-preview" hidden></div>
+    <div class="tw-buttons">
+      <button id="copy-btn" class="tw-download" type="button">📋 Salin Markdown</button>
+      <button id="dl-btn" class="tw-download alt" type="button">⬇ Unduh README.md</button>
+    </div>
+    <p class="fineprint" id="status">Hasil berubah otomatis setiap kamu mengetik.</p>
+  </section>
+</main>
+
+<footer class="app-footer">
+  <p>Dibuat oleh Remike Dev · Generator README — semua proses lokal di browser.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
